@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,12 +22,24 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_kur06-$n*zu0+hw7u#)doz_3@w5k4*#zqo-aqlmb1q&0kdmkh'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+if not SECRET_KEY:
+    # Persist a unique key locally; never include it in Git or the submission.
+    secret_file = BASE_DIR / '.secret-key'
+    if not secret_file.exists():
+        try:
+            with secret_file.open('x', encoding='utf-8') as handle:
+                handle.write(get_random_secret_key())
+            secret_file.chmod(0o600)
+        except FileExistsError:
+            pass
+    SECRET_KEY = secret_file.read_text(encoding='utf-8').strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', 'true').lower() == 'true'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ddhruvsa1.pythonanywhere.com']
+LOGIN_URL = 'accounts.login'
 
 
 # Application definition
@@ -80,12 +93,8 @@ WSGI_APPLICATION = 'moviesstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'moviesstore',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': Path(os.environ.get('DJANGO_DB_PATH', BASE_DIR / 'db.sqlite3')),
     }
 }
 
@@ -125,6 +134,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
+
+if not DEBUG:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_SSL_REDIRECT = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -1,0 +1,11 @@
+.work/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.secret-key
+db.sqlite3
+static/
+project.zip
+deliverables/
+*.log
