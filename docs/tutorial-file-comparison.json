@@ -1,0 +1,219 @@
+{
+  "reference_commit": "3d1425f06d7486285d0bead570f37654ec4b5282",
+  "reference_file_count": 53,
+  "exact_matches": 49,
+  "files": [
+    {
+      "path": "accounts/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/admin.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/apps.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/forms.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/migrations/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/models.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/templates/accounts/login.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/templates/accounts/orders.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/templates/accounts/signup.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/tests.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/urls.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "accounts/views.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/admin.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/apps.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/migrations/0001_initial.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/migrations/0002_item.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/migrations/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/models.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/templates/cart/index.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/templates/cart/purchase.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/templatetags/cart_filters.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/tests.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/urls.py",
+      "matches_normalized_text": false
+    },
+    {
+      "path": "cart/utils.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "cart/views.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/apps.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/templates/home/about.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/templates/home/index.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/urls.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "home/views.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "manage.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/admin.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/apps.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/migrations/0001_initial.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/migrations/0002_review.py",
+      "matches_normalized_text": false
+    },
+    {
+      "path": "movies/migrations/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/models.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/templates/movies/edit_review.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/templates/movies/index.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/templates/movies/show.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/tests.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "movies/urls.py",
+      "matches_normalized_text": false
+    },
+    {
+      "path": "movies/views.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/__init__.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/asgi.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/settings.py",
+      "matches_normalized_text": false
+    },
+    {
+      "path": "moviesstore/static/css/style.css",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/templates/base.html",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/urls.py",
+      "matches_normalized_text": true
+    },
+    {
+      "path": "moviesstore/wsgi.py",
+      "matches_normalized_text": true
+    }
+  ]
+}
