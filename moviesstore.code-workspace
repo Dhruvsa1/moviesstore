@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Downloads/Django-5-for-the-Impatient-Second-Edition-main/Django-5-for-the-Impatient-Second-Edition-main/Chapter06/moviesstore/home"
+		},
+		{
+			"path": "../../../../Downloads/Django-5-for-the-Impatient-Second-Edition-main/Django-5-for-the-Impatient-Second-Edition-main/Chapter06/moviesstore/media"
+		},
+		{
+			"path": "../../../../Downloads/Django-5-for-the-Impatient-Second-Edition-main/Django-5-for-the-Impatient-Second-Edition-main/Chapter06/moviesstore/movies"
+		},
+		{
+			"path": "../../../../Downloads/Django-5-for-the-Impatient-Second-Edition-main/Django-5-for-the-Impatient-Second-Edition-main/Chapter06/moviesstore/moviesstore"
+		}
+	],
+	"settings": {}
+}
