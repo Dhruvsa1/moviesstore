@@ -1,7 +1,7 @@
 {
   "reference_commit": "3d1425f06d7486285d0bead570f37654ec4b5282",
   "reference_file_count": 53,
-  "exact_matches": 49,
+  "exact_matches": 42,
   "files": [
     {
       "path": "accounts/__init__.py",
@@ -117,7 +117,7 @@
     },
     {
       "path": "home/templates/home/about.html",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "home/templates/home/index.html",
@@ -141,7 +141,7 @@
     },
     {
       "path": "movies/admin.py",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "movies/apps.py",
@@ -161,7 +161,7 @@
     },
     {
       "path": "movies/models.py",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "movies/templates/movies/edit_review.html",
@@ -173,11 +173,11 @@
     },
     {
       "path": "movies/templates/movies/show.html",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "movies/tests.py",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "movies/urls.py",
@@ -185,7 +185,7 @@
     },
     {
       "path": "movies/views.py",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "moviesstore/__init__.py",
@@ -201,7 +201,7 @@
     },
     {
       "path": "moviesstore/static/css/style.css",
-      "matches_normalized_text": true
+      "matches_normalized_text": false
     },
     {
       "path": "moviesstore/templates/base.html",

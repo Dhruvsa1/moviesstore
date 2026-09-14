@@ -48,7 +48,7 @@ The reporting extension adds Review.is_hidden, a ReviewReport model, an authenti
 
 ## Demonstration
 
-The portfolio video is one uninterrupted, narrated browser recording showing actual pointer movements, text entry, clicks, scrolling, and page transitions. It follows the website from Home through customer and staff workflows, without scene cuts, still-image inserts, numbered sections, or title cards. Public/customer flows use the deployed site. Staff administration uses the same project locally with an isolated demonstration database and a temporary staff account, as explained in the narration. Captions accompany the owner's existing custom Dhruv voice in ElevenLabs.
+The portfolio video is one uninterrupted, narrated browser recording showing actual pointer movements, text entry, clicks, scrolling, and page transitions. It follows the website from Home through customer and staff workflows, without scene cuts, still-image inserts, numbered sections, or title cards. Public/customer flows use the deployed site. Staff administration uses the same project locally with an isolated demonstration database and a temporary staff account, as explained in the narration. The refreshed recording includes submitting a review report, confirming that it stays hidden after refresh, and dismissing a report in staff administration to restore the review. Captions accompany the owner's existing custom Dhruv voice in ElevenLabs.
 
 ## Verification limits
 
