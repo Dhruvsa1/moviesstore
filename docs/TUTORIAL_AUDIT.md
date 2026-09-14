@@ -48,7 +48,7 @@ All original movie/account/cart view implementations, models, and tutorial HTML/
 
 ## Demonstration
 
-The portfolio video is a narrated, captioned walkthrough assembled from actual captured application screens. Public/customer flows were exercised on the deployed site. Staff administration was exercised locally using the same project and a separate temporary staff account. The narrated video makes that distinction explicit. It is not a continuous cursor recording.
+The portfolio video is a narrated, captioned browser recording showing actual pointer movements, text entry, clicks, scrolling, and page transitions. Public/customer flows were recorded on the deployed site. Staff administration was recorded locally using the same project with an isolated demonstration database and a temporary staff account. The narration and video labels make that distinction explicit. Pauses between recording steps are trimmed, and the narration uses the owner's existing custom Dhruv voice in ElevenLabs.
 
 ## Verification limits
 
