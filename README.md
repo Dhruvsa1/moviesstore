@@ -37,21 +37,24 @@ No shared administrator credentials are included. Each checkout generates its ow
 - Movie catalog, case-insensitive name search, movie details and posters.
 - Signup, login, logout, and authenticated order history.
 - Review creation, reading, editing, and deletion with owner checks.
+- Report inappropriate reviews with a reason; reports immediately hide the review pending staff moderation.
 - Session-based cart quantities, totals, and clearing.
 - Simulated checkout, order confirmation, saved orders and item records.
 - Django administration for movies, reviews, orders, items, users, and groups.
 
-Purchases do not charge money. Streaming, rentals, and recommendations mentioned in the textbook's sample About copy are not implemented features.
+Purchases do not charge money. Streaming, rentals, and recommendations are not implemented features.
+
+Signed-in users can report another user's review once. In Django admin, open Review reports, select reports, and choose Uphold reports and keep reviews hidden or Dismiss reports and restore reviews. Moderation requires both review and report change permissions. Hidden reviews cannot be edited to bypass moderation.
 
 ## Verification
 
 ```powershell
 .venv\Scripts\python.exe manage.py check
 .venv\Scripts\python.exe manage.py makemigrations --check --dry-run
-.venv\Scripts\python.exe manage.py test home
+.venv\Scripts\python.exe manage.py test
 ```
 
-Seven integration tests cover public pages/search, account lifecycle, authentication redirects, review CRUD and ownership, cart totals/checkout/private orders, clearing/empty checkout, and admin access. See `docs/TUTORIAL_AUDIT.md` for the comparison and deliberate differences.
+Fifteen integration tests cover public pages/search, account lifecycle, authentication redirects, review CRUD and ownership, cart totals/checkout/private orders, clearing/empty checkout, admin access, and reporting validation, visibility, duplicates, CSRF, and moderation permissions. See `docs/TUTORIAL_AUDIT.md` for the comparison and deliberate differences.
 
 ## PythonAnywhere deployment
 
@@ -71,7 +74,7 @@ PythonAnywhere's free site must be renewed from the Web tab monthly. Its display
 
 ## Tutorial scope and attribution
 
-The core feature implementation and templates intentionally preserve the book's completed project. Django 5.0 is pinned for textbook fidelity; this educational implementation should be upgraded and further hardened before being used for a real commercial store. In particular, the book uses GET links for several state-changing operations and minimal server-side cart validation.
+The application is based on the book's completed project, extended with review reporting and moderation to satisfy user story 21. The About text and responsive image behavior were also corrected. Django 5.0 is pinned for textbook fidelity; this educational implementation should be upgraded and further hardened before being used for a real commercial store. In particular, the book uses GET links for several state-changing operations and minimal server-side cart validation.
 
 Original example code: https://github.com/PacktPublishing/Django-5-for-the-Impatient-Second-Edition/tree/main/Chapter12/moviesstore
 

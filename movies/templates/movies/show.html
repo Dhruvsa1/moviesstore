@@ -28,6 +28,9 @@
 
         <h2>Reviews</h2>
         <hr />
+        {% for message in messages %}
+        <div class="alert alert-info" role="status">{{ message }}</div>
+        {% endfor %}
         <ul class="list-group">
           {% for review in template_data.reviews %}
           <li class="list-group-item pb-3 pt-3">
@@ -48,7 +51,15 @@
               Delete
             </a>
             {% endif %}
+            {% if user != review.user %}
+            <a class="btn btn-outline-secondary btn-sm"
+              href="{% url 'movies.report_review' id=template_data.movie.id review_id=review.id %}">
+              Report review
+            </a>
+            {% endif %}
           </li>
+          {% empty %}
+          <li class="list-group-item">No reviews yet.</li>
           {% endfor %}
         </ul>
 
